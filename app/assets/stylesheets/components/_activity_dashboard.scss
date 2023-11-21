@@ -1,0 +1,62 @@
+.h1-dashboard {
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.btn--delete {
+  color:black;
+  border: solid 1px #fca8a8;
+  background-color: #fca8a8;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.btn--edit {
+  color: black;
+  border: solid 1px #b9f2df;
+  background-color: #b9f2df;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-left:5px
+}
+
+.card-product {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-product img {
+  height: 100%;
+  max-width: 100px;
+  object-fit: cover;
+}
+
+.card-image-holder{
+  height: 100%;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 5px;
+  padding-bottom: 0px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}

@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  border-bottom: 1px solid #ccc;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,59 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-item-user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu.dropdown-menu-left {
+  left: 0;
+  right: auto;
+  max-width: 200px; /* Adjust the max-width to your preference */
+}
+
+.user-image {
+  margin-right: 0px; /* Adjust spacing as needed */
+}
+
+.user-name {
+  display: none; /* Hide the name by default */
+}
+
+.nav-item-user:hover .user-name {
+  display: block; /* Show the name on hover */
+}
+
+.non-border {
+  border: none !important;
+  padding-right: 0px !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-items-right {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.nav-link {
+  margin-right: 5px;
 }

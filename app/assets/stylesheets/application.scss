@@ -9,4 +9,22 @@
 
 // Your CSS partials
 @import "components/index";
+@import "pages/dashboard";
 @import "pages/index";
+@import "components/show";
+@import "components/map";
+@import 'components/address_autocomplete';
+@import "components/show_details";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: $body-font !important;
+}
+
+.footer-space {
+  margin-bottom: 90px;
+}

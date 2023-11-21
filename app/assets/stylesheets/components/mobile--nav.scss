@@ -1,0 +1,64 @@
+.mobile-nav {
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  // display: flex;
+  // justify-content: space-between;
+  background-color: #FFFFFF;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.home-icon {
+  text-align: center;
+}
+
+.messages-icon {
+  text-align: center;
+}
+
+.create-activity-icon {
+  text-align: center;
+}
+
+.my-activity-icon {
+  text-align: center;
+}
+
+.messages-icon {
+  align-items: center;
+}
+
+
+.icon-text1 {
+  font-size: 10px;
+  position: relative;
+}
+.icon-text2 {
+  font-size: 10px;
+  position: relative;
+
+}
+.icon-text3 {
+  font-size: 10px;
+  position: relative;
+
+}
+.icon-text4 {
+  font-size: 10px;
+  position: relative;
+}
+.icon-text5 {
+  font-size: 10px;
+  position: relative;
+}

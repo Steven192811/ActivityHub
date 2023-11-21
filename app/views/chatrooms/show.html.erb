@@ -1,0 +1,5 @@
+<!-- Message Box -->
+<!--Display message box to activity owner or activity participants-->
+<% if @activity_booked || current_user == @activity.owner%>
+  <%= render partial: "chatroom", locals: {activity: @activity, chatroom: @chatroom, message: @message}%>
+<% end %>

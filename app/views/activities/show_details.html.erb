@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-12 col-lg-12 owner-card">
+    <!-- Owner's card -->
+    <div class="card-product-activity mt-3">
+      <% if @activity.owner.profile_image.attached? %>
+        <%= image_tag @activity.owner.profile_image, alt: "Owner's Photo"  %>
+        <h5 class="owner-name" style="display: none;"><%= @activity.owner.profile_image %></h5>
+      <% else %>
+        <!-- use a default photo if the owner doesn't have a photo -->
+        <%= image_tag "owner.png", alt: "Default Owner Photo" %>
+        <h5 class="owner-name" style="display: none;"><%= @activity.owner.first_name %></h5>
+      <% end %>
+      <div class="card-product-infos">
+        <h2><%= @activity.owner.first_name %> <%= @activity.owner.last_name %></h2>
+        <p>Activity host</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Participants' cards (in separate columns) -->
+<div>
+  <div class="row participants-column">
+    <% @accepted_participants.each do |participant| %>
+      <div class="col-md-12 col-lg-12">
+        <div class="card-product-activity participant-card">
+          <% if participant.profile_image.attached? %>
+            <%= image_tag participant.profile_image, alt: "User Profile Image" %>
+          <% else %>
+            <!-- Use a default photo if the participant doesn't have a photo -->
+            <%= image_tag "participant.png", alt: "Default Participant Photo" %>
+          <% end %>
+          <div class="card-product-infos">
+            <h2><%= participant.first_name %> <%= participant.last_name %></h2>
+            <p>Participant</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

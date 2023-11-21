@@ -1,0 +1,72 @@
+.chatroom {
+  background: white;
+  margin-top: 9px;
+  height: calc(100vh - 20vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  h1 {
+    border-bottom: 1px solid $gray-200;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+
+  .messages {
+    height: 100%;
+    overflow: scroll;
+    padding: 1rem;
+  }
+
+  #new_message {
+    border-top: 1px solid $gray-200;
+    padding: 1rem;
+    width: 100%;
+
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.chatroom--section {
+  // border: 1px solid black;
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+    ul {
+      list-style: none;
+      li {
+        // border: 1px solid black;
+        background-attachment: fixed;
+        background-color: white;
+        color: grey;
+        margin: 5px;
+        padding: 5px;
+      }
+    }
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input .chat-button {
+  align-self: flex-start;
+  background-color: #b7d4f1;
+  color: rgb(6, 6, 6);
+  margin-left: 3px;
+  margin-top: 0;
+}
+
+.msg-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.acticity-photo {
+  width: 120px;
+  height: 120px;
+}

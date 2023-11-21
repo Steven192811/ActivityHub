@@ -1,0 +1,21 @@
+.custom--card {
+  background-color: #ffffff;
+  // color: #000000;
+  // font-family: 'Roboto', sans-serif;
+  // font-size: 1.3rem;
+  // padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.custom--card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-left: 0;
+  margin-right: 0;
+}
